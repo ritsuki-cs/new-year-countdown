@@ -1,0 +1,41 @@
+.App {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > h1 {
+    font-size: 60px;
+  }
+  .countdown {
+    // display: flex;
+    display: none;
+    vertical-align: middle;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    .time {
+      margin: 0 30px;
+      h1{
+        font-size: 50px;
+      }
+      h2 {
+        font-weight: 500;
+      }
+    }
+  }
+  .next-year {
+    font-size: 200px;
+    font-weight: 400;
+    z-index: -1;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 20px;
+  }
+}
